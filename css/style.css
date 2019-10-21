@@ -116,7 +116,7 @@ h4 {
 p {
     font-family: Open Sans, sans-serif;
     font-size: 0.9375rem; /* 15px */
-    padding: 2px 2px 2px 0;
+    padding: 5px 5px 5px 0;
     margin: 0;
     
 }
@@ -125,7 +125,6 @@ p {
 }
 .subtle {
 	color: #999;
-    
 }
 .spaced {
     letter-spacing: 5px;
@@ -643,10 +642,8 @@ button {
     font-size: 1.5rem;
 }
 /* --------------------------- /////////// VII. TEAM SECTION /////////// --------------------------- */
-
 #full-row {
     width: 100%;
-    padding-bottom: 15px;
 }
 #team figure {
     display: inline-block;
@@ -658,27 +655,38 @@ button {
     border-radius: 3px;
     border-bottom: 2px solid #E48632;
 }
-
-.event-caption ul li > a:hover {
+.team-caption ul {
+    margin-top: 10px;
+}
+.team-caption ul li {
+    display: inline;
+    margin: 0 5px;
+}
+.team-caption ul li > a {
+    color: #EEE;
+}
+.team-caption ul li > a:hover {
     color: #E48632;
 }
-.event-caption {
+.team-caption {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     text-align: center; 
-    padding: 1% 10px 20px 1%;
+    padding: 10% 10px 20px 20px;
     z-index: 5;
     opacity: 0;
     transition: all 0.4s ease;
-    
 }
-#events figure:hover > .event-caption {
+#team figure:hover > .team-caption {
     opacity: 1;
 }
-
+.team-name {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
 .gallery-item {
     padding: 0 2.5px;
 }
@@ -698,7 +706,6 @@ button {
     border-left: 2px solid #E48632;
     padding: 25px 35px;
     margin: 10px 0;
-    height: 100%;
 }
 .modal-content {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
@@ -976,7 +983,11 @@ button {
         font-size: 3.5rem;
     }
 }
-
+@media (max-width : 640px) {
+    .hero-caption h1 {
+        font-size: 1.5rem;
+    }
+}
 @media (max-width : 480px) {
     .game-card-left img {
         min-height: 0;
